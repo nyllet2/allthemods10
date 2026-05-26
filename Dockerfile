@@ -6,7 +6,7 @@ LABEL version="7.0"
 
 
 RUN apt-get update && apt-get install -y curl unzip jq && \
-    adduser --uid 99 --gid 100 --home /data --disabled-password minecraft
+    
 
 COPY launch.sh /launch.sh
 RUN chmod +x /launch.sh
