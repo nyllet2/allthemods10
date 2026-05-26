@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y curl unzip jq && \
 COPY launch.sh /launch.sh
 RUN chmod +x /launch.sh
 
-USER minecraft
+USER root
 
 VOLUME /data
 WORKDIR /data
